@@ -1,5 +1,4 @@
 import { component$, useStylesScoped$ } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
   useStylesScoped$(`
@@ -29,11 +28,6 @@ export default component$(() => {
   const name = "Qwik";
   return (
     <div class="card">
-
-      <div class="links">
-        <Link href={$localize`/page`} class="link">{$localize`PAGE`}</Link>
-      </div>
-
       <div style="padding-bottom: 1.25rem;">
         <div style="font-weight: 700; font-size: 1.5rem;">{$localize`Hello from ${name}!`}</div>
       </div>
